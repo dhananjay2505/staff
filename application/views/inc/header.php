@@ -26,9 +26,7 @@
             <li><a href="index.php"> Home </a></li>
             <li><a href="job_search.php">Find Jobs</a></li>
             <li><a href="job_post.php">Post Jobs</a></li>
-            <li><a href="profile.php">My Profile</a></li>
-            <li><a href="login.php">Login/Sign up</a></li>
-            <li><a href="edit-profile.php">Edit Profile</a></li>
+            <li><a href="Profilecandidate">My Profile</a></li>
             <li><a href="logout.php">Logout</a></li>
         </ul>
     </div>
@@ -39,13 +37,10 @@
             <span class="d-block d-sm-none" style="font-size: 26px; cursor: pointer; float: right; margin-top: 0; line-height: 34px; color: #2d2d2d;" onclick="openNav()">&#9776; </span>
             <ul class="navigation desktop_view">
                 <li><a href="index.php" class="top_nav">Home </a></li>
-                <li><a href="job_search.php" class="top_nav">Find Jobs</a></li>
+                <li><a href="Jobsearch" class="top_nav">Find Jobs</a></li>
                 <li><a href="job_post.php" class="top_nav">Post Jobs</a></li>
-                <li><a href="profile.php" class="top_nav">My Profile</a></li>
-                
-                <li><a href="profile_edit.php" class="top_nav">Edit Profile</a></li>
+                <li><a href="Profilecandidate" class="top_nav">My Profile</a></li>    
                 <li><a href="logout.php" class="top_nav">Logout</a></li>
-                <li><a href="admin.php" class="top_nav">Admin</a></li>
             </ul>
         </div>
     </div>
