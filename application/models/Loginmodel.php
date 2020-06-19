@@ -14,7 +14,7 @@ class Loginmodel extends CI_model {
         'user_mobile_number' => "$username",
         'user_pwd' => "$password",
 		);
-		$q = $this->db->where(['user_mobile_number'=>$username, 'user_pwd' => $password])
+		$q = $this->db->where([('user_mobile_number' => $username OR 'user_email_id' => $username) AND 'user_pwd' => $password])
 						->get('employee_user');
 		if ($q->num_rows()) {
 			return $q->result();
