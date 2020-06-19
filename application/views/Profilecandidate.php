@@ -22,10 +22,14 @@
 
 <div class="col-md-4 float-left col-12">
 <div class="sidebar mt_20 desktop_view float-left">
-    <span style="position: absolute; right: 20px; top: 10px; font-size: 14px;"> <a href="">Edit</a> </span>
-    <img src="assets/images/profile.png" class="round_img">
-    <span class="primery_title float-left pt_5">Stela Maxwell</span>
-    <span class="second_subtitle float-left">stelamaxwell@gmail.com</span>
+    <span class="primery_title float-left pt_5">Quick link</span>
+    <ul class="quick_link">
+        <li><a href=""> Experience</a></li>
+        <li><a href=""> Personal information</a></li>
+        <li><a href=""> Education</a></li>
+        <li><a href=""> Preferences</a></li>
+        <li><a href="#Certicifation"> Certicifation</a></li>
+    </ul>
 </div>
 
 </div> <!-- ===  OL_MD 4 right side section end here ========== -->
@@ -33,51 +37,8 @@
         <div class="wrapper">
             
             <div class="common_box mt_10 float-left">
-                <h1 class="section_title">Experience </h1>
-                
-                <ul class="cpmmon_ul">
-                    <li>
-                        <div class="w-100 float-left">
-                            <span class="font_14 w-100 bold float-left">Head Chef</span>
-                            <span class="second_subtitle w-100 float-left">Behrouz biryani ltd</span>
-                            <span class="second_subtitle w-100">May 2020 - Jun 2020</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="w-100 float-left">
-                            <span class="font_14 w-100 bold float-left">Head Chef</span>
-                            <span class="second_subtitle w-100 float-left">Behrouz biryani ltd</span>
-                            <span class="second_subtitle w-100">May 2020 - Jun 2020</span>
-                        </div>
-                    </li>
-                </ul>
-            </div> <!--  ================== Experience END -->
-            <div class="common_box mt_10 float-left">
-                <h1 class="section_title">Experience </h1>
-                <a href="" class="add_link float-right" data-toggle="modal" data-target="#experience">Add/Edit </a>
-
-                <ul class="cpmmon_ul">
-                    <li>
-                        <div class="w-100 float-left">
-                            <span class="font_14 w-100 bold float-left">BBA (Distance Learning Programme ) </span>
-                            <span class="second_subtitle w-100 float-left">Institutions Name</span>
-                            <span class="second_subtitle w-100">May 2020 - Jun 2020</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="w-100 float-left">
-                            <span class="font_14 w-100 bold float-left">10th class </span>
-                            <span class="second_subtitle w-100 float-left">School Name</span>
-                            <span class="second_subtitle w-100">May 2020 - Jun 2020</span>
-                        </div>
-                    </li>
-                </ul>
-           
-
-            </div> <!--  ================== Education END -->
-            <div class="common_box mt_10 float-left">
-                <h1 class="section_title">Others Information </h1>
-                
+                 <h1 class="section_title">Personal Information </h1>
+                <a href="" class="add_link float-right" data-toggle="modal" data-target="#personal">Add/Edit </a>
                 <table class="table spec_table">
                     <tr>
                         <td class="lable_text">Date of birth </td>
@@ -111,7 +72,64 @@
                         <td class="lable_text">Languages</td>
                         <td class="infp_text">English, Hindi</td>
                     </tr>
-                </table>                 
+                </table> 
+                    <!-- If there is no data =========== -->
+                    <div class="w-100" id="">
+                        <img src="assets/images/icon_3.svg" class="float-left">     
+                        <span class="subtitle float-left w-100 mt_10">Mention your Personal information </span> 
+                    </div>
+                  
+                
+            </div> <!--  ================== Experience END -->
+
+            <div class="common_box mt_10 float-left">
+                <h1 class="section_title">Experience </h1>
+                <a href="" class="add_link float-right" data-toggle="modal" data-target="#experience">Add/Edit </a>
+                    <!-- If there is no data =========== -->
+                    <div class="w-100 float-left mt_20" id="">
+                        <img src="assets/images/icon_1.svg" class="float-left">     
+                        <span class="subtitle float-left w-100 mt_10"> Mention your employment details including your current and previous company work experience. </span> 
+                    </div>
+                <ul class="cpmmon_ul">
+                    <li>
+                        <div class="w-100 float-left">
+                            <span class="font_14 w-100 bold float-left">BBA (Distance Learning Programme ) </span>
+                            <span class="second_subtitle w-100 float-left">Institutions Name</span>
+                            <span class="second_subtitle w-100">May 2020 - Jun 2020</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="w-100 float-left">
+                            <span class="font_14 w-100 bold float-left">10th class </span>
+                            <span class="second_subtitle w-100 float-left">School Name</span>
+                            <span class="second_subtitle w-100">May 2020 - Jun 2020</span>
+                        </div>
+                    </li>
+                </ul>
+           
+
+            </div> <!--  ================== Education END -->
+            <div class="common_box mt_10 float-left">
+                <h1 class="section_title"  id="Certicifation">Certicifation  </h1>
+                <a href="" class="add_link float-right" data-toggle="modal" data-target="#experience">Add/Edit </a>
+                <ul class="cpmmon_ul">
+                    <li>
+                        <div class="w-100 float-left">
+                            <span class="font_14 w-100 bold float-left">Online Certificaton </span>
+                            <span class="second_subtitle w-100 float-left">Institutions Name</span>
+                            <span class="second_subtitle w-100">May 2020 - Jun 2020</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="w-100 float-left">
+                            <span class="font_14 w-100 bold float-left">10th class </span>
+                            <span class="second_subtitle w-100 float-left">School Name</span>
+                            <span class="second_subtitle w-100">May 2020 - Jun 2020</span>
+                        </div>
+                    </li>
+                </ul>
+                
+                       
             </div> <!--  ================== Other Information END -->
             <div class="common_box mt_10 float-left mb_30">
                 <h1 class="section_title mb_15">Proof of identification  </h1>
@@ -164,12 +182,10 @@
                         <option value="">Junior Chef</option>
                         <option value="">Junior Chef</option>
                     </select>
-                    <span class="help-block"></span>
                 </div>
                 <div class="col-md-12 float-left col-12 mb_20">
                     <label for="">Company name</label>
                     <input type="text" name="email" class="form-control" value="" placeholder="Position name">
-                    <span class="help-block"></span>
                 </div>
                 <div class="col-md-6 float-left col-6 mb_20">
                          <label for="">State </label>
@@ -204,10 +220,6 @@
 
                 </div> <!--End of ROW-->
             </form>
-            
-           
-
-
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Save & Add more</button>
@@ -216,6 +228,101 @@
     </div>
   </div>
 </div>
+
+<!-- ========================================================================
+-----------================  2nd Modal================================================-->
+<!-- Modal -->
+<div class="modal fade" id="personal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="section_title" id="exampleModalLabel">Personal Information</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="w-100 float-left">
+            <div class="row">
+            <div class="col-md-6 float-left col-6 mb_20">
+                <label for="">First name</label>
+                <input type="text" name="text" class="form-control" value="" placeholder="Enter first name">
+                <span class="help-block"></span>
+            </div>
+            <div class="col-md-6 float-left col-6 mb_20">
+                <label for="">Last name</label>
+                <input type="text" name="text" class="form-control" value="" placeholder="Last name">
+            </div>
+            <div class="col-md-6 float-left col-6 mb_20">
+                    <label for="">Current State </label>
+                <input type="hidden" name="country" id="countryId" value="IN"/>
+                <select name="state" class="form-control states order-alpha" id="stateId">
+                    <option value="">Select State</option>
+                </select>
+            </div>
+            <div class="col-md-6 float-left col-6 mb_20">
+                <label for="">Current Location </label>
+                <select name="city" id="cityId" class="form-control cities order-alpha">
+                    <option value="">Select City</option>
+                </select>
+            </div>
+
+            <div class="col-md-12 float-left col-12 mb_20">
+                <label for="">Permanent Address</label>
+                <textarea class="form-control" id="" rows="3"></textarea>
+            </div>
+            <div class="col-md-4 float-left col-6 mb_20">
+                <label for="">Gender</label>
+                <select name="" id="" class="form-control">
+                    <option selected="" disabled="" value="">Choose...</option>
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                    <option value="">Others</option>
+                </select>
+            </div>
+            <div class="col-md-4 float-left col-6 mb_20">
+                <label for="">DOB</label>
+                <input type="text" id="datepicker" class="form-control">
+            </div>
+            <div class="col-md-4 float-left col-6 mb_20">
+                <label for="">Phone</label>
+                <input type="number" name="" class="form-control" value="9895678765" placeholder="Phone number" readonly="">
+            </div>
+            <div class="col-md-5 float-left col-5 mb_20 pr_0">
+                <label for="">Email</label>
+                <input type="text" name="" class="form-control" value="Email@gmail.com" placeholder="Email" readonly="">
+            </div>
+            <div class="col-md-4 float-left col-6 mb_20 pr_0">
+                <label for="">Total Exp</label>
+                <select name="" id="" class="form-control">
+                    <option value="">2019</option>
+                    <option value="">2020 Chef</option>
+                    <option value="">2020 Chef</option>
+                </select>
+            </div>
+            <div class="col-md-3 float-left col-6 mb_20">
+                <label for="">Month</label>
+                <select name="" id="" class="form-control">
+                    <option value="">Jan </option>
+                    <option value="">Feb</option>
+                    <option value="">March</option>
+                    
+                </select>
+            </div>
+            </div> <!--================= End of ROW-============ == -->
+        </form>
+      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Save & Add more</button>
+        <button type="button" class="btn primary_btn">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 <script>
     // $('#myModal').on('shown.bs.modal', function () {
