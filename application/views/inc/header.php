@@ -6,12 +6,12 @@
    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="WeThink Studio is an award winning UX Agency with practices spanning User Experience, Mobility, Service Design, Digital Transformation, User Research and Agile UX" />
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/custom.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/owl.carousel.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/owl.theme.default.min.css'); ?>">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="<?php echo base_url('assets/images/favicon/apple-icon-57x57.png'); ?>">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <title>New Adidhi - Job Search Portal</title>
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
@@ -34,7 +34,7 @@
     <div class="header">
         <!--it Visible For Desktop only-->
         <div class="container">
-            <a href="index.php"><img src="assets/images/logo.png" class="top_logo float-left" style="width:140px;"></a>
+            <a href="index.php"><img src="<?php echo base_url('assets/images/logo.png'); ?>" class="top_logo float-left" style="width:140px;"></a>
             <span class="d-block d-sm-none" style="font-size: 26px; cursor: pointer; float: right; margin-top: 0; line-height: 34px; color: #2d2d2d;" onclick="openNav()">&#9776; </span>
             <ul class="navigation desktop_view">
                 <li><a href="index.php" class="top_nav">Home </a></li>
