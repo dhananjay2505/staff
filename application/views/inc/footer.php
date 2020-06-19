@@ -8,6 +8,9 @@
 
     <script src="assets/js/main.js"></script>
     <script src="//geodata.solutions/includes/statecity.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
     
     <script>
         function openNav() {
