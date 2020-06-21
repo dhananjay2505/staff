@@ -31,7 +31,16 @@ body {
 .bg_white {
     background-color: var(--white);
 }
-
+a.add_link, a {
+    color: var(--brand);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+a:hover, a.add_link:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
 .section_title {
     font-size: 22px;
     font-style: normal;
@@ -46,7 +55,7 @@ body {
 }
 
 .subtitle {
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-stretch: normal;
     line-height: 18px;
@@ -71,6 +80,7 @@ body {
     line-height: 16px;
     font-weight: 400;
 }
+
 .bold{
     font-weight: 700 !important;
 }
@@ -125,6 +135,40 @@ span.dots {
 
 .main_wrapper {
     max-width: 1080px;
+}
+
+.card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #fff !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    border: 0;
+    padding: 0;
+    color: var(--primary);
+}
+.card-body{padding: 15px;}
+.btn-link {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: transparent;
+    text-decoration: none;
+}
+.btn-link:hover {
+    color: var(--primary);
+    text-decoration: none;
+    background-color: #f4f4f4;
+    border-color: transparent;
+    cursor: pointer;
+    border-radius: 0;
+}
+.card {
+    border-radius: 0;
+    border: 0;
+    padding-bottom: 0;
+    padding-top: 15px;
+    border-bottom: 1px solid #d5d5d5;
 }
 ul.quick_link {
     display: block;
@@ -264,7 +308,7 @@ a.top_nav:hover {
 .sidebar {
     background: #fff;
     width: 100%;
-    padding: 15px;
+    /* padding: 15px; */
     border: 1px solid #e4e7f0;
     box-shadow: -2px 4px 7px 1px #1312120f;
     border-radius: 4px;
@@ -738,15 +782,77 @@ span.help-block {
 
 /*========================= FORM CONTROL INPUT ELEMENT =============================
   ====================================================================================*/
+input[type="radio"], input[type="checkbox"] {
+    box-sizing: border-box;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    top: -4px;
+}
+ul.check_list {
+    display: table-row;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.search_box{
+    border-radius: 100px !important;
+}
+div#accordionExample {
+    float: left;
+    width: 100%;
+    /* display: block; */
+    /* position: relative; */
+}
+ul.check_list>li {
+    display: block;
+    width: 100%;
+    float: left;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+    text-transform: capitalize !important;
+}
+ul.check_list_inline {
+    display: inline-block;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
 
+ul.check_list_inline>li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-transform: capitalize !important;
+}
+.btn-secondary {
+    background: transparent !important;
+    color: var(--primary) !important;
+    border: 0;
+    margin: 10px 0 10px !important;
+    font-weight: 700;
+}
+.btn-secondary:hover {
+    background: transparent;
+    color: var(--primary);
+    border: 0;
+    margin: 15px 0 10px;
+}
 .form-check-input {
     margin-top: 0.25rem;
     margin-left: 0;
 }
 
 .form-check-label {
-    padding-left: 20px;
+    padding-left: 26px;
     margin-bottom: 0;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 14px;
+    cursor: pointer;
 }
 
 .form-control:focus,
