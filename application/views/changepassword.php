@@ -50,7 +50,7 @@ if (empty($_SESSION['mobileno'])) {
                 <div class="col-md-7 float-left col-12 no-padding mb_20">
                     <label>Confirm Password</label>
                     <input type="password" name="confirm_password" class="form-control" placeholder="Please enter password">
-                    <input type="hidden" value="<?php echo base64_encode($_SESSION['number']); ?>" name="a">
+                    <input type="hidden" value="<?php echo base64_encode($_SESSION['mobileno']); ?>" name="a">
                     <span class="help-block error" name="error"><?php echo form_error('confirm_password'); ?></span>
                 </div>
                 <div class="col-md-7 float-left col-12 no-padding">

@@ -11,8 +11,6 @@ class Register extends CI_Controller {
 		$this->load->library('form_validation');
 		$this->load->model('Registermodel');
 
-		$this->form_validation->set_rules('firstname', 'First Name', 'required|trim|alpha|min_length[3]|max_length[20]');
-		$this->form_validation->set_rules('lastname', 'Last Name', 'required|trim|alpha|min_length[2]|max_length[20]');
 		$this->form_validation->set_rules('email', 'Email ID', 'required|trim|valid_email|is_unique[employee_user.user_email_id]', array(
                 'is_unique'     => 'This %s already exists.'
         ));
@@ -25,11 +23,10 @@ class Register extends CI_Controller {
 		$this->form_validation->set_rules('checked', 'Checked', 'required');
 
 		if ($this->form_validation->run())
-		{	if (isset($_SESSION['otp'])) {
+		{
+			if (isset($_SESSION['otp'])) {
 				if ($this->input->post("otp")==$_SESSION['otp']) {
 					
-					$firstname = $this->input->post("firstname");
-					$lastname = $this->input->post("lastname");
 					$email = $this->input->post("email");
 					$number = $this->input->post("number");
 					$password = sha1($this->input->post("password"));
@@ -37,7 +34,7 @@ class Register extends CI_Controller {
 					$token2 = bin2hex(openssl_random_pseudo_bytes(16));
 					$token = $token1.$token2;
 
-					if ($this->Registermodel->newuserregister($firstname,$lastname,$email,$number,$password,$token)) {
+					if ($this->Registermodel->newuserregister($email,$number,$password,$token)) {
 						$userdata= array(
 							'user_token'  => "$token",
 							'user_email_id' => "$email",

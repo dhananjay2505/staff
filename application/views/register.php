@@ -47,16 +47,7 @@ if ($this->session->userdata('user_token')) {
             <?php
             $attributes = array('id' => 'myform');
             echo form_open('/register/', $attributes); ?>
-            <div class="col-md-6 float-left col-12 no-padding mb_20">
-                
-                <input type="text" name="firstname" class="form-control" value="<?php echo set_value('firstname'); ?>" placeholder="First Name">
-                <span class="help-block"><?php echo form_error('firstname'); ?></span>
-            </div>
-            <div class="col-md-6 float-left col-12 no-padding mb_20">
-                
-                <input type="text" name="lastname" class="form-control" value="<?php echo set_value('lastname'); ?>" placeholder="Last Name">
-                <span class="help-block"><?php echo form_error('lastname'); ?></span>
-            </div>    
+            
             <div class="col-md-6 float-left col-12 no-padding mb_20">
                 
                 <input type="text" name="email" class="form-control" value="<?php echo set_value('email'); ?>" placeholder="Enter Email ID">

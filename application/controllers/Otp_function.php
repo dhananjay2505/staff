@@ -16,6 +16,7 @@ class Otp_function extends CI_Controller {
 
 			$otp = rand(100000,999999);
 			$_SESSION['otp'] = $otp;
+			$_SESSION['number'] = $number['n'];
 			//Your authentication key
 			$authKey = "307390AltWJr545ee89c93P1";
 			//Multiple mobiles numbers separated by comma

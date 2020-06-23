@@ -28,7 +28,7 @@ if ($this->session->userdata('loginin')) {
 	<?php echo form_open('/userlogout/'); ?>
 		<input type="submit" name="logout" value="Logout">
 	</form>
-	<?php echo form_open('/profile/'); ?>
+	<?php echo form_open('/profilecandidate/'); ?>
 		<input type="submit" name="" value="Let's Start">
 	</form>
 	</body>

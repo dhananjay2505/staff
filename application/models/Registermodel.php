@@ -5,7 +5,7 @@ class Registermodel extends CI_model {
 
 	/*this function for new register user*/
 
-	public function newuserregister($firstname,$lastname,$email,$number,$password,$token)
+	public function newuserregister($email,$number,$password,$token)
 	{
 		$timenow=time();
 		date_default_timezone_set("Asia/Kolkata");
@@ -14,8 +14,6 @@ class Registermodel extends CI_model {
 		
 		$data = array(
         'user_token' => "$token",
-        'user_first_name' => "$firstname",
-        'user_last_name' => "$lastname",
         'user_email_id' => "$email",
         'user_mobile_number' => "$number",
         'user_mobile_verification' => "$current_time",

@@ -28,7 +28,7 @@
             <li><a href="job_search.php">Find Jobs</a></li>
             <li><a href="job_post.php">Post Jobs</a></li>
             <li><a href="Profilecandidate">My Profile</a></li>
-            <li><a href="logout.php">Logout</a></li>
+            <li><a href="<?php echo base_url('register/logout'); ?>">Logout</a></li>
         </ul>
     </div>
     <div class="header">
@@ -41,7 +41,7 @@
                 <li><a href="Jobsearch" class="top_nav">Find Jobs</a></li>
                 <li><a href="job_post.php" class="top_nav">Post Jobs</a></li>
                 <li><a href="Profilecandidate" class="top_nav">My Profile</a></li>    
-                <li><a href="logout.php" class="top_nav">Logout</a></li>
+                <li><a href="<?php echo base_url('register/logout'); ?>" class="top_nav">Logout</a></li>
             </ul>
         </div>
     </div>

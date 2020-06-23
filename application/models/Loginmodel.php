@@ -14,11 +14,18 @@ class Loginmodel extends CI_model {
         'user_mobile_number' => "$username",
         'user_pwd' => "$password",
 		);
-		$q = $this->db->where([('user_mobile_number' => $username OR 'user_email_id' => $username) AND 'user_pwd' => $password])
+		$q = $this->db->where('user_mobile_number', $username)
+						->where('user_pwd',$password)
 						->get('employee_user');
-		if ($q->num_rows()) {
+
+		$email = $this->db->where('user_email_id', $username)
+						->where('user_pwd',$password)
+						->get('employee_user');
+		if ($q->num_rows()>0) {
 			return $q->result();
 			
+		}else if ($email->num_rows()>0){
+			return $email->result();
 		}else{
 			return false;
 		}
@@ -37,6 +44,18 @@ class Loginmodel extends CI_model {
     	$this->db->where('user_mobile_number', $number);
     	$this->db->update('employee_user', $data);
     	return true;
+	}
+
+
+	public function otpchecklogin($number){
+		if ($this->db->where('user_mobile_number', $number)
+						->get('employee_user')) {
+			return true;
+		}
+		else{
+			return false;
+		}
+						
 	}
 	
 }

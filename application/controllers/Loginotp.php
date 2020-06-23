@@ -1,17 +1,39 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Login extends CI_Controller {
+class Loginotp extends CI_Controller {
 
 	
 	public function index()
 	{
-		$this->load->view('login');
+		$this->load->view('loginotp');
 		
 	}
 
+	public function otplogin(){
+		$this->load->model('Loginmodel');
+		if (isset($_SESSION['otp']) && isset($_SESSION['number']) && empty($this->input->post("b"))) {
 
-	public function loginuser(){
+			if ($this->input->post("b")==$_SESSION['otp']) {
+				if ($this->Loginmodel->otpchecklogin($_SESSION['number'])) {
+					$userdata= array(
+						'user_token'  => "$token",
+						'user_email_id' => "$email",
+						'loginin' => "loginin",
+					);
+					$this->session->set_userdata($userdata);
+					redirect('/letsstart/');
+				}
+			}else{
+				$data['errordata'] = "OTP invalid1";
+				
+			}
+		}else{
+			echo $data['errordata'] = "Please click Get OTP link";
+		}
+	}
+	
+	/*public function loginuser(){
 		$this->load->library('form_validation');
 		$this->load->model('Loginmodel');
 
@@ -51,5 +73,5 @@ class Login extends CI_Controller {
 			$data['error'] = "Login field";
 			$this->load->view('login', $data);
 		}
-	}
+	}*/
 }
