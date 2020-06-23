@@ -1,7 +1,7 @@
 $(document).ready(function () {
-    // _bindaddActive();
+    _bindaddActive();
     _bindScrolldiv();
-    // _bindliactive();
+    
     // _bindhome_slider();
     // _bindwork_slider();
     // _bindPrice_slider()
@@ -16,11 +16,12 @@ function _bindSend_Post(){
     } );
 
 }
-// function _bindaddActive(){
-//     $('.navigation li a').filter(function(){
-//         return this.href === location.href;
-//     }).addClass('top_nav_active');
-// }
+function _bindaddActive(){
+    $('.navigation li a').filter(function(){
+        return this.href === location.href;
+    }).addClass('top_nav_active');
+}
+
 function _bindScrolldiv(){
     $("a[href^='#']").click(function(e) {
         e.preventDefault();

@@ -613,7 +613,6 @@ $this->load->view('inc/header');
                     
                 </ul>
                 
-                       
             </div> 
 
             <div class="modal fade" id="education" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -922,6 +921,8 @@ $this->load->view('inc/header');
                 </div>
 
 
+
+            </div> <!--  ================== Other Information END -->
             <div class="common_box mt_10 float-left mb_30">
                 <h1 class="section_title mb_15">Proof of identification  </h1>
                 <div class="job_container">
@@ -1176,6 +1177,7 @@ $(document).ready(function(){
 });
 
 
+<<<<<<< HEAD
 /*delete*/
 $(document).ready(function(){
 
@@ -1281,6 +1283,119 @@ $(document).ready(function(){
         });
     });
 });
+=======
+<!-- ========================================================================
+-----------================  4th Modal================================================-->
+<!-- Modal -->
+<div class="modal fade" id="preferences" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="section_title" id="exampleModalLabel">Preferences </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="w-100 float-left">
+            <div class="row">
+            <div class="col-md-12 float-left col-12 mb_20">
+                <label for="">Positions Preferred</label>
+                <select name="" id="" class="form-control">
+                    <option selected="" disabled="" value="">Choose...</option>
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                    <option value="">Others</option>
+                </select>
+            </div>
+            <div class="col-md-12 float-left col-12 mb_20">
+                <label for="">Job Type</label>
+                <ul class="check_list_inline">
+                    <li>
+                        <div class="form-check check_list">
+                            <input class="form-check-input" type="checkbox" value="" id="ch_1">
+                            <label class="form-check-label" for="ch_1">Parttime</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check check_list">
+                            <input class="form-check-input" type="checkbox" value="" id="ch_2">
+                            <label class="form-check-label" for="ch_2"> Full Time </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check check_list">
+                            <input class="form-check-input" type="checkbox" value="" id="ch_2">
+                            <label class="form-check-label" for="ch_2"> Both </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 float-left col-6 mb_20">
+                    <label for="">Preferred Location </label>
+                <input type="hidden" name="country" id="countryId" value="IN"/>
+                <select name="state" class="form-control states order-alpha" id="stateId">
+                    <option value="">Select State</option>
+                </select>
+            </div>
+            <div class="col-md-6 float-left col-6 mb_20">
+                <label for="">City</label>
+                <select name="city" id="cityId" class="form-control cities order-alpha">
+                    <option value="">Select City</option>
+                </select>
+            </div>
+            <div class="col-md-12 float-left col-12 mb_20">
+                <label for="">Type of Job indusrty</label>
+                <ul class="check_list_inline">
+                    <li><div class="form-check check_list">
+                            <input class="form-check-input" type="checkbox" value="" id="ch_1">
+                            <label class="form-check-label" for="ch_1">Bakarey</label>
+                        </div>
+                    </li>
+                    <li><div class="form-check check_list">
+                            <input class="form-check-input" type="checkbox" value="" id="ch_2">
+                            <label class="form-check-label" for="ch_2"> Spa & Sallon </label>
+                        </div>
+                    </li>
+                    <li><div class="form-check check_list">
+                            <input class="form-check-input" type="checkbox" value="" id="ch_1">
+                            <label class="form-check-label" for="ch_1">Restrurent</label>
+                        </div>
+                    </li>
+                    <li><div class="form-check check_list">
+                            <input class="form-check-input" type="checkbox" value="" id="ch_2">
+                            <label class="form-check-label" for="ch_2"> Hotel & Spa </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 float-left col-6 mb_20 pr_0">
+                <label for="">Preferred Salary </label>
+                <input type="text" name="" class="form-control" placeholder="e.g 22000">
+            </div>
+            <div class="col-md-4 float-left col-6 mb_20">
+                <label for="">.</label>
+                <select name="" id="" class="form-control">
+                    <option selected="" disabled="" value="">Choose...</option>
+                    <option value=""> Lakhs (Annual) </option>
+                    <option value=""> Thousand (Annual) </option>
+                    <option value=""> Lakhs (Mohtly) </option>
+                    <option value=""> Thousand (Monthly) </option>
+                </select>
+            </div>
+            </div> <!--================= End of ROW-============ == -->
+        </form>
+      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Save & Add more</button>
+        <button type="button" class="btn primary_btn">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+>>>>>>> f22d9b1ef86ccbe82f7748bb72dfa269e881388b
 
 </script>
 
